@@ -18,6 +18,16 @@ jobs:
       - name: Estrai il progetto Android
         run: unzip -q RegistraSchermo-progetto-Android.zip
 
+      - name: Applica sorgenti aggiornati
+        run: |
+          cp overrides/MainActivity.java RegistraSchermo/app/src/main/java/it/example/registraschermo/MainActivity.java
+          cp overrides/ScreenCaptureService.java RegistraSchermo/app/src/main/java/it/example/registraschermo/ScreenCaptureService.java
+          cp overrides/AvRecorder.java RegistraSchermo/app/src/main/java/it/example/registraschermo/AvRecorder.java
+          cp overrides/FloatingControls.java RegistraSchermo/app/src/main/java/it/example/registraschermo/FloatingControls.java
+          cp overrides/AndroidManifest.xml RegistraSchermo/app/src/main/AndroidManifest.xml
+          cp overrides/activity_main.xml RegistraSchermo/app/src/main/res/layout/activity_main.xml
+          cp overrides/build.gradle.kts RegistraSchermo/app/build.gradle.kts
+
       - name: Configura Java 17
         uses: actions/setup-java@v4
         with:
