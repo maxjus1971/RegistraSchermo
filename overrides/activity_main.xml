@@ -63,13 +63,14 @@
             android:gravity="center"
             android:text="Pronto per registrare"
             android:textColor="#F8FAFC"
-            android:textSize="15sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:gravity="center"
-            android:text="I video sono salvati in Filmati/RegistraSchermo.\nDurante la registrazione puoi trascinare i controlli flottanti.\nI comandi sono protetti dalla cattura, ma su alcuni telefoni possono lasciare un riquadro oscurato."
+            android:text="I video sono salvati in Filmati/RegistraSchermo.\nDurante la registrazione, scorri dall’alto per aprire le notifiche: lì trovi REC / IN PAUSA, Pausa / Riprendi e Stop.\nNon c’è più una barra flottante nera. La tendina delle notifiche può però essere visibile nel filmato mentre la apri."
             android:textColor="#94A3B8"
             android:textSize="13sp" />
     </LinearLayout>
